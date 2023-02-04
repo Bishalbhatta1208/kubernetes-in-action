@@ -28,7 +28,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR 🏷
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: "main_push_to_ecr"
+          ECR_REPOSITORY: "clo835-week4"
           IMAGE_TAG: v0.1
         run: |
          cd Chapter02/kubia/
